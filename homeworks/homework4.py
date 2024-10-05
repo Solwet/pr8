@@ -1,14 +1,13 @@
-def inf_input(x):
+def num_input(prompt):
     while True:
         try:
-            return int(input(x))
+            return int(input(prompt))
         except ValueError:
             print("Ошибка: пожалуйста, введите целое число.")
 
-
-a = inf_input("Введите первое число (a): ")
-b = inf_input("Введите второе число (b): ")
-
+# Запрашиваем у пользователя два числа
+a = num_input("Введите первое число (a): ")
+b = num_input("Введите второе число (b): ")
 
 print("Целые числа между", a, "и", b, ":")
 for i in range(a + 1, b):
