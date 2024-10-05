@@ -1,6 +1,10 @@
-def Oct(a):
-    return oct(a)[2::]
-def Bin(a):
-    return bin(a)[2::]
-a=int(input("Введите число в десятичной системе счисления:"))
-print("Число",a,"В восьмеричной системе счисления равно:",Oct(a),"а в двоичной равно:",Bin(a))
+while True:
+    try:
+        a = int(input("Введите первое число: "))
+        b = int(input("Введите второе число: "))
+        result = a + b
+        
+        print("Сумма чисел: " + str(result))
+    
+    except ValueError:
+        print("Ошибка: введите целые числа!")
