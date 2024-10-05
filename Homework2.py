@@ -2,5 +2,5 @@ def Oct(a):
     return oct(a)[2::]
 def Bin(a):
     return bin(a)[2::]
-a=int(input("Введите число"))
-print(Oct(a),Bin(a))
+a=int(input("Введите число в десятичной системе счисления:"))
+print("Число",a,"В восьмеричной системе счисления равно:",Oct(a),"а в двоичной равно:",Bin(a))
